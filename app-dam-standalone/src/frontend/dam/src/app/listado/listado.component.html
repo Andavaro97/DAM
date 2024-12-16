@@ -1,0 +1,5 @@
+<div *ngIf="listado | async as listado">
+  <div *ngFor="let elemento of listado">
+    <app-dispositivo [dispositivo]="elemento"></app-dispositivo>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div
+  id="popUp-container"
+  *ngIf="
+    popUpService.isOpen &&
+    popUpService.popUpData &&
+    popUpService.popUpData.length
+  "
+>
+  <div id="popUp-close-btn" (click)="onClose()">x</div>
+  <div id="popUp-body">
+    <div id="popUp-list">
+      <div *ngFor="let elemento of popUpService.popUpData">
+        <p>
+          ID:
+          {{
+            popUpService.popUpData[popUpService.popUpData.indexOf(elemento)]
+              .medicionId ||
+              popUpService.popUpData[popUpService.popUpData.indexOf(elemento)]
+                .logRiegoId
+          }}
+          - Fecha:
+          {{
+            popUpService.popUpData[popUpService.popUpData.indexOf(elemento)]
+              .fecha
+          }}
+          -
+          {{
+            popUpService.popUpData[popUpService.popUpData.indexOf(elemento)]
+              .valor
+          }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

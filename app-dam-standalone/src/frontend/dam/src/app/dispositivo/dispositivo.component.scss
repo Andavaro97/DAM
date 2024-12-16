@@ -1,0 +1,36 @@
+#dispositivo-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #cccccc;
+  background-color: #f9f9f9;
+  position: relative;
+  margin: 15px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#dispositivo-container p {
+  color: #333333;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+#dispositivo-container:hover {
+  border: 1px dashed #0078d4;
+  background-color: #eef7ff;
+}
+
+#strong {
+  font-weight: 700;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #0056b3;
+}
+
+#arrow {
+  right: 15px;
+  position: absolute;
+  font-size: 20px;
+  color: #0078d4;
+}
